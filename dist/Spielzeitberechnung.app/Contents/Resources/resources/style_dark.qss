@@ -1,0 +1,15 @@
+* { font-family: -apple-system, "Segoe UI", Roboto, Arial; }
+QMainWindow, QWidget { background: #0f1720; color: #dbe2eb; }
+#Sidebar            { background: #0c131b; border-right: 1px solid #1f2a37; }
+#SidebarButton      { background: #15202b; color: #dbe2eb; border: 1px solid #1f2a37; border-radius: 8px; padding: 8px; }
+#SidebarButton:hover{ background: #1b2a39; }
+#Topbar             { background: #0f1720; border-bottom: 1px solid #1f2a37; }
+#TopbarTitle        { color: #e5ecf5; font-weight: 600; }
+#DeviceCombo, #CaseCombo { background:#0c131b; border:1px solid #233042; padding:6px 8px; border-radius:8px; }
+#PrimaryButton      { background:#3b82f6; color: white; border:none; padding:8px 14px; border-radius:8px; }
+#PrimaryButton:hover{ background:#2f6fe0; }
+QTableWidget        { background:#0f1720; gridline-color:#243140; }
+QHeaderView::section{ background:#1a2532; color:#b9c7d8; padding:6px; border:none; }
+#H2                 { color:#e5ecf5; font-size:18px; font-weight:700; }
+#H3                 { color:#cbd5e1; font-size:14px; font-weight:600; }
+#Caption            { color:#aab8c6; font-size:12px; }

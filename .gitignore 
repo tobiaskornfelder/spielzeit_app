@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtuelle Umgebung
+venv/
+
+# Build/Output
+build/
+dist/
+*.spec
+
+# VS Code (nur Workspace-Kleinkram ignorieren)
+.vscode/

@@ -1,0 +1,63 @@
+/* ====== Base ====== */
+QMainWindow {
+    background: #111722;
+    color: #D5DCE6;
+    font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial;
+    font-size: 14px;
+}
+
+/* ====== Sidebar ====== */
+#Sidebar {
+    background: #0E1520;
+    border-right: 1px solid #1D2430;
+}
+#SidebarTitle { color: #8FA3BF; font-weight: 600; letter-spacing: .5px; }
+#Sidebar QPushButton#SidebarButton {
+    background: #142032; color: #D5DCE6;
+    border: 1px solid #1E2A3D; border-radius: 10px; padding: 10px 12px;
+}
+#Sidebar QPushButton#SidebarButton:hover { background: #1A2A42; border-color: #2A3950; }
+#Sidebar QPushButton#SidebarButton:pressed { background: #0F1A2A; }
+
+/* ====== Topbar ====== */
+#Topbar { background: #0F1724; border-bottom: 1px solid #1D2430; }
+#TopbarTitle { color: #C8D3E1; font-weight: 600; font-size: 15px; }
+#TopbarLogo { padding-right: 8px; background: transparent; }
+
+#DeviceCombo, #CaseCombo {
+    background: #111D2E; color: #D5DCE6;
+    border: 1px solid #2A3650; border-radius: 8px; padding: 6px 10px;
+}
+#DeviceCombo::drop-down, #CaseCombo::drop-down { border: none; }
+
+#PrimaryButton {
+    background: #4C8CDE; color: white; border: 1px solid #4C8CDE;
+    border-radius: 10px; padding: 8px 14px; font-weight: 600;
+}
+#PrimaryButton:hover { background: #3C76BE; border-color: #3C76BE; }
+
+/* ====== Typography ====== */
+#H2 { color: #DDE6F3; font-size: 18px; font-weight: 700; }
+#H3 { color: #BBD0EB; font-size: 15px; font-weight: 600; margin-top: 8px; }
+#Caption { color: #93A6C1; font-size: 13px; }
+
+/* ====== Table ====== */
+QTableWidget {
+    background: #0F1724; border: 1px solid #1F2A3A; border-radius: 10px;
+    gridline-color: #223147; selection-background-color: #1F2F48; selection-color: #EAF2FF;
+}
+QHeaderView::section {
+    background: #0F1B2B; color: #9EB2CC; padding: 8px; border: none; border-right: 1px solid #223147;
+}
+
+/* ====== Dialog ====== */
+#SettingsDialog {
+    background: #121A28;
+    border: 1px solid #1D2534;
+}
+#SettingsDialog QLabel#CompanyLogo { background: transparent; }
+
+/* ====== Scrollbars ====== */
+QScrollBar:vertical, QScrollBar:horizontal { background: transparent; border: none; }
+QScrollBar::handle { background: #223147; border-radius: 6px; }
+QScrollBar::add-line, QScrollBar::sub-line { height: 0px; width: 0px; background: transparent; }
