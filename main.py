@@ -6,7 +6,7 @@ from PySide6.QtGui import QPainter, QPen, QFont, QColor, QPixmap, QGuiApplicatio
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QFrame, QLabel, QPushButton,
     QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem, QComboBox,
-    QFileDialog, QMessageBox, QDialog, QDialogButtonBox
+    QFileDialog, QMessageBox, QDialog, QDialogButtonBox, QStyleFactory   # <-- neu
 )
 
 # ---------------------------------------------------------
@@ -115,7 +115,7 @@ def load_stylesheet(app: QApplication, theme: str):
         app.setStyleSheet(_builtin_dark_qss() if theme == "dark" else _builtin_light_qss())
 
 # ---------------------------------------------------------
-# Theme-Paletten für Zeichnen (Light/Dark)
+# Theme-Paletten für Zeichnen (Light-/Darkmode)
 # ---------------------------------------------------------
 def progress_palette(theme: str):
     if theme == "light":
@@ -343,10 +343,17 @@ class MainWindow(QMainWindow):
             pm = QPixmap(str(lp))
             if not pm.isNull(): logo.setPixmap(pm.scaledToHeight(28, Qt.SmoothTransformation))
         h.addWidget(logo, 0, Qt.AlignVCenter)
+
         title = QLabel("Spielzeit-Berechnung  •  FEM 9.831/9.832/9.842-1"); title.setObjectName("TopbarTitle"); h.addWidget(title, 1)
-        self.combo_device = QComboBox(); self.combo_device.addItems(["RBG Einmast (1x tief)","RBG Zweimast (2x tief)","Heber","AKF / Shuttle","AKL (Mini-Load)"]); self.combo_device.setFixedWidth(220)
-        self.combo_case   = QComboBox(); self.combo_case.addItems([f"FEM 9.851 – Fall {i}" for i in range(1,7)]); self.combo_case.setFixedWidth(160)
+
+        self.combo_device = QComboBox(); self.combo_device.setObjectName("DeviceCombo")  # <-- wichtig
+        self.combo_device.addItems(["RBG Einmast (1x tief)","RBG Zweimast (2x tief)","Heber","AKF / Shuttle","AKL (Mini-Load)"]); self.combo_device.setFixedWidth(220)
+
+        self.combo_case   = QComboBox(); self.combo_case.setObjectName("CaseCombo")       # <-- wichtig
+        self.combo_case.addItems([f"FEM 9.851 – Fall {i}" for i in range(1,7)]); self.combo_case.setFixedWidth(160)
+
         self.btn_calc     = QPushButton("Berechnen"); self.btn_calc.setObjectName("PrimaryButton")
+
         for w in (self.combo_device, self.combo_case, self.btn_calc): h.addWidget(w, 0, Qt.AlignRight)
         return f
 
@@ -358,7 +365,6 @@ class MainWindow(QMainWindow):
         hdr = QLabel("Übersicht"); hdr.setObjectName("H2"); v.addWidget(hdr)
 
         prog_row = QHBoxLayout(); prog_row.setSpacing(22)
-        # vorerst neutrale Farbangaben, werden in apply_runtime_palettes überschrieben
         self.progress_a = CircularProgress(80)
         self.progress_b = CircularProgress(45)
         self.progress_c = CircularProgress(75)
@@ -381,7 +387,6 @@ class MainWindow(QMainWindow):
         self._push_row("RBG Einmast (1x tief)", "3.0", "1.4", "21.9", "26.1")
         self._push_row("RBG Zweimast (2x tief)", "3.5", "1.5", "19.8", "25.2")
         v.addWidget(self.table)
-
         return page
 
     def _push_row(self, device, vx, vy, spiel, zyklus):
@@ -389,7 +394,7 @@ class MainWindow(QMainWindow):
         for c, val in enumerate([device, vx, vy, spiel, zyklus]):
             self.table.setItem(r, c, QTableWidgetItem(val))
 
-    # ---- Theme anwenden (nur Laufzeit-Farben, nicht QSS) ----
+    # ---- Theme anwenden (nur Laufzeit-Farben) ----
     def apply_runtime_palettes(self, theme: str):
         ppal = progress_palette(theme)
         for prog in (self.progress_a, self.progress_b, self.progress_c):
@@ -454,6 +459,7 @@ if __name__ == "__main__":
         Qt.HighDpiScaleFactorRoundingPolicy.PassThrough
     )
     app = QApplication(sys.argv)
+    app.setStyle(QStyleFactory.create("Fusion"))  # <-- wichtig für konsistente QSS
 
     cfg = load_config()
     load_stylesheet(app, cfg.get("theme", "light"))

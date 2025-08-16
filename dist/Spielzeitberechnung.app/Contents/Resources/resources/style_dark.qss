@@ -5,7 +5,6 @@ QMainWindow, QWidget { background: #0f1720; color: #dbe2eb; }
 #SidebarButton:hover{ background: #1b2a39; }
 #Topbar             { background: #0f1720; border-bottom: 1px solid #1f2a37; }
 #TopbarTitle        { color: #e5ecf5; font-weight: 600; }
-#DeviceCombo, #CaseCombo { background:#0c131b; border:1px solid #233042; padding:6px 8px; border-radius:8px; }
 #PrimaryButton      { background:#3b82f6; color: white; border:none; padding:8px 14px; border-radius:8px; }
 #PrimaryButton:hover{ background:#2f6fe0; }
 QTableWidget        { background:#0f1720; gridline-color:#243140; }
@@ -13,3 +12,43 @@ QHeaderView::section{ background:#1a2532; color:#b9c7d8; padding:6px; border:non
 #H2                 { color:#e5ecf5; font-size:18px; font-weight:700; }
 #H3                 { color:#cbd5e1; font-size:14px; font-weight:600; }
 #Caption            { color:#aab8c6; font-size:12px; }
+
+/* =====================
+   ComboBoxes (scoped)
+   ===================== */
+QComboBox#DeviceCombo,
+QComboBox#CaseCombo {
+    background: #0c131b;
+    border: 1px solid #233042;
+    border-radius: 10px;
+    padding: 4px 10px;          /* schmaler */
+    min-height: 30px;           /* schmaler */
+}
+QComboBox#DeviceCombo:hover,
+QComboBox#CaseCombo:hover { border-color: #2f3e50; }
+QComboBox#DeviceCombo:focus,
+QComboBox#CaseCombo:focus  { border: 1px solid #3b82f6; }
+
+/* Kein ::drop-down überschreiben → Standard-Pfeil sichtbar */
+QComboBox#DeviceCombo QAbstractItemView,
+QComboBox#CaseCombo  QAbstractItemView {
+    background: #0f1720;
+    border: 1px solid #233042;
+    selection-background-color: #3b82f6;
+    selection-color: #ffffff;
+}
+
+/* =====================
+   Modern Checkbox
+   ===================== */
+QCheckBox { spacing: 12px; font-size: 14px; color: #ffffff; }
+QCheckBox::indicator {
+    width: 24px; height: 24px;
+    border-radius: 6px;
+    border: 2px solid #2563eb;
+    background-color: #1e293b;
+}
+QCheckBox::indicator:checked {
+    background-color: #2563eb; border: 2px solid #2563eb;
+}
+QCheckBox::indicator:hover { border: 2px solid #3b82f6; }

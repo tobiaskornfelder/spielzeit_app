@@ -1,33 +1,54 @@
-/* Base */
-* { font-family: -apple-system, "Segoe UI", Roboto, Arial; color:#0f1720; }
-QMainWindow, QWidget { background: #f7f9fb; }
+* { font-family: -apple-system, "Segoe UI", Roboto, Arial; }
+QMainWindow, QWidget { background: #ffffff; color: #1e293b; }
+#Sidebar            { background: #f5f7fa; border-right: 1px solid #e5e7eb; }
+#SidebarButton      { background: #ffffff; color: #1e293b; border: 1px solid #d1d5db; border-radius: 8px; padding: 8px; }
+#SidebarButton:hover{ background: #f0f2f5; }
+#Topbar             { background: #ffffff; border-bottom: 1px solid #e5e7eb; }
+#TopbarTitle        { color: #111827; font-weight: 600; }
+#PrimaryButton      { background:#2563eb; color: white; border:none; padding:8px 14px; border-radius:8px; }
+#PrimaryButton:hover{ background:#1d4ed8; }
+QTableWidget        { background:#ffffff; gridline-color:#e5e7eb; }
+QHeaderView::section{ background:#f3f4f6; color:#374151; padding:6px; border:none; }
+#H2                 { color:#111827; font-size:18px; font-weight:700; }
+#H3                 { color:#374151; font-size:14px; font-weight:600; }
+#Caption            { color:#6b7280; font-size:12px; }
 
-/* Sidebar */
-#Sidebar { background:#ffffff; border-right:1px solid #e5e9f0; }
-#SidebarButton {
-  background:#f3f6fb;
-  border:1px solid #e1e6ee;
-  border-radius:10px;
-  padding:10px 12px;
+/* =====================
+   ComboBoxes (scoped)
+   ===================== */
+QComboBox#DeviceCombo,
+QComboBox#CaseCombo {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 4px 10px;          /* schmaler */
+    min-height: 30px;           /* schmaler */
 }
-#SidebarButton:hover { background:#eaf0f8; }
+QComboBox#DeviceCombo:hover,
+QComboBox#CaseCombo:hover { border-color: #2563eb; }
+QComboBox#DeviceCombo:focus,
+QComboBox#CaseCombo:focus  { border: 1px solid #2563eb; }
 
-/* Topbar */
-#Topbar { background:#ffffff; border-bottom:1px solid #e5e9f0; }
-#TopbarTitle { color:#0f1720; font-weight:600; }
-#DeviceCombo, #CaseCombo {
-  background:#ffffff; border:1px solid #d7dde5; padding:6px 8px; border-radius:8px;
+/* Wichtig: keinen ::drop-down überschreiben → Standard-Pfeil bleibt sichtbar */
+QComboBox#DeviceCombo QAbstractItemView,
+QComboBox#CaseCombo  QAbstractItemView {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    selection-background-color: #2563eb;
+    selection-color: #ffffff;
 }
-#PrimaryButton {
-  background:#2563eb; color:white; border:none; padding:8px 14px; border-radius:8px;
+
+/* =====================
+   Modern Checkbox
+   ===================== */
+QCheckBox { spacing: 12px; font-size: 14px; color: #000000; }
+QCheckBox::indicator {
+    width: 24px; height: 24px;
+    border-radius: 6px;
+    border: 2px solid #2563eb;
+    background-color: #ffffff;
 }
-#PrimaryButton:hover { background:#1f54c8; }
-
-/* Tables */
-QTableWidget { background:#ffffff; gridline-color:#e5e9f0; }
-QHeaderView::section { background:#eef2f7; color:#334155; padding:8px; border:none; }
-
-/* Typography */
-#H2 { color:#111827; font-size:18px; font-weight:700; }
-#H3 { color:#374151; font-size:14px; font-weight:600; }
-#Caption { color:#475569; font-size:12px; }
+QCheckBox::indicator:checked {
+    background-color: #2563eb; border: 2px solid #2563eb;
+}
+QCheckBox::indicator:hover { border: 2px solid #3b82f6; }

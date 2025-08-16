@@ -17,6 +17,11 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/styles/libqmacstyle.dylib',
    'BINARY'),
+  ('PySide6/Qt/plugins/networkinformation/libqscnetworkreachability.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/networkinformation/libqscnetworkreachability.dylib',
+   'BINARY'),
   ('PySide6/Qt/plugins/tls/libqsecuretransportbackend.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
@@ -27,25 +32,75 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/tls/libqopensslbackend.dylib',
    'BINARY'),
-  ('PySide6/Qt/plugins/networkinformation/libqscnetworkreachability.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/networkinformation/libqscnetworkreachability.dylib',
-   'BINARY'),
   ('PySide6/Qt/plugins/tls/libqcertonlybackend.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/tls/libqcertonlybackend.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqwbmp.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqwbmp.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqmacheif.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqmacheif.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqsvg.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqsvg.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqmacjp2.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqmacjp2.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqicns.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqicns.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqtga.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqtga.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqwebp.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqwebp.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.dylib',
    'BINARY'),
   ('PySide6/Qt/plugins/platforms/libqminimal.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforms/libqminimal.dylib',
    'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqicns.dylib',
+  ('PySide6/Qt/plugins/generic/libqtuiotouchplugin.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqicns.dylib',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/generic/libqtuiotouchplugin.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/platforms/libqcocoa.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforms/libqcocoa.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqico.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqico.dylib',
+   'BINARY'),
+  ('PySide6/Qt/plugins/imageformats/libqjpeg.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqjpeg.dylib',
    'BINARY'),
   ('PySide6/Qt/plugins/imageformats/libqgif.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
@@ -57,75 +112,20 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/iconengines/libqsvgicon.dylib',
    'BINARY'),
-  ('PySide6/Qt/plugins/platforms/libqoffscreen.dylib',
+  ('PySide6/Qt/plugins/imageformats/libqtiff.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforms/libqoffscreen.dylib',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqtiff.dylib',
    'BINARY'),
   ('PySide6/Qt/plugins/imageformats/libqpdf.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqpdf.dylib',
    'BINARY'),
-  ('PySide6/Qt/plugins/platforms/libqcocoa.dylib',
+  ('PySide6/Qt/plugins/platforms/libqoffscreen.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforms/libqcocoa.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/generic/libqtuiotouchplugin.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/generic/libqtuiotouchplugin.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqico.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqico.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforminputcontexts/libqtvirtualkeyboardplugin.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqwebp.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqwebp.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqjpeg.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqjpeg.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqwbmp.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqwbmp.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqsvg.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqsvg.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqmacheif.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqmacheif.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqtga.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqtga.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqtiff.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqtiff.dylib',
-   'BINARY'),
-  ('PySide6/Qt/plugins/imageformats/libqmacjp2.dylib',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/imageformats/libqmacjp2.dylib',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/plugins/platforms/libqoffscreen.dylib',
    'BINARY'),
   ('lib-dynload/_csv.cpython-313-darwin.so',
    '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_csv.cpython-313-darwin.so',
@@ -199,6 +199,9 @@
   ('lib-dynload/resource.cpython-313-darwin.so',
    '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/resource.cpython-313-darwin.so',
    'EXTENSION'),
+  ('lib-dynload/_heapq.cpython-313-darwin.so',
+   '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_heapq.cpython-313-darwin.so',
+   'EXTENSION'),
   ('lib-dynload/_multibytecodec.cpython-313-darwin.so',
    '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_multibytecodec.cpython-313-darwin.so',
    'EXTENSION'),
@@ -219,9 +222,6 @@
    'EXTENSION'),
   ('lib-dynload/_codecs_hk.cpython-313-darwin.so',
    '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_codecs_hk.cpython-313-darwin.so',
-   'EXTENSION'),
-  ('lib-dynload/_heapq.cpython-313-darwin.so',
-   '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/lib-dynload/_heapq.cpython-313-darwin.so',
    'EXTENSION'),
   ('PySide6/QtWidgets.abi3.so',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
@@ -293,20 +293,20 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtSvg.framework/Versions/A/QtSvg',
    'BINARY'),
-  ('PySide6/Qt/lib/QtPdf.framework/Versions/A/QtPdf',
+  ('PySide6/Qt/lib/QtQmlModels.framework/Versions/A/QtQmlModels',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtPdf.framework/Versions/A/QtPdf',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtQmlModels.framework/Versions/A/QtQmlModels',
+   'BINARY'),
+  ('PySide6/Qt/lib/QtVirtualKeyboard.framework/Versions/A/QtVirtualKeyboard',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtVirtualKeyboard.framework/Versions/A/QtVirtualKeyboard',
    'BINARY'),
   ('PySide6/Qt/lib/QtOpenGL.framework/Versions/A/QtOpenGL',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtOpenGL.framework/Versions/A/QtOpenGL',
-   'BINARY'),
-  ('PySide6/Qt/lib/QtQuick.framework/Versions/A/QtQuick',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtQuick.framework/Versions/A/QtQuick',
    'BINARY'),
   ('PySide6/Qt/lib/QtQml.framework/Versions/A/QtQml',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
@@ -323,33 +323,33 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtVirtualKeyboardQml.framework/Versions/A/QtVirtualKeyboardQml',
    'BINARY'),
-  ('PySide6/Qt/lib/QtVirtualKeyboard.framework/Versions/A/QtVirtualKeyboard',
+  ('PySide6/Qt/lib/QtQuick.framework/Versions/A/QtQuick',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtVirtualKeyboard.framework/Versions/A/QtVirtualKeyboard',
-   'BINARY'),
-  ('PySide6/Qt/lib/QtQmlModels.framework/Versions/A/QtQmlModels',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtQmlModels.framework/Versions/A/QtQmlModels',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtQuick.framework/Versions/A/QtQuick',
    'BINARY'),
   ('PySide6/Qt/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta',
    'BINARY'),
-  ('libcrypto.3.dylib',
-   '/Library/Frameworks/Python.framework/Versions/3.13/lib/libcrypto.3.dylib',
-   'BINARY'),
-  ('PySide6/libpyside6.abi3.6.9.dylib',
+  ('PySide6/Qt/lib/QtPdf.framework/Versions/A/QtPdf',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/libpyside6.abi3.6.9.dylib',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/lib/QtPdf.framework/Versions/A/QtPdf',
+   'BINARY'),
+  ('libcrypto.3.dylib',
+   '/Library/Frameworks/Python.framework/Versions/3.13/lib/libcrypto.3.dylib',
    'BINARY'),
   ('shiboken6/libshiboken6.abi3.6.9.dylib',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/shiboken6/libshiboken6.abi3.6.9.dylib',
+   'BINARY'),
+  ('PySide6/libpyside6.abi3.6.9.dylib',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/libpyside6.abi3.6.9.dylib',
    'BINARY'),
   ('PySide6/Qt/lib/QtDBus.framework/Versions/A/QtDBus',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
@@ -390,100 +390,100 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/resources/style_light.qss',
    'DATA'),
-  ('PySide6/Qt/translations/qt_nl.qm',
+  ('PySide6/Qt/translations/qt_help_ru.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_nl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_fi.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_fi.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_lv.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_lv.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_de.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_de.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_sl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_sl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_pt_BR.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_pt_BR.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ru.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_gd.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_gd.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_ja.qm',
+  ('PySide6/Qt/translations/qt_help_zh_CN.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ja.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_zh_CN.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_cs.qm',
+  ('PySide6/Qt/translations/qt_uk.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_cs.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_ja.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ja.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_en.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_en.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_pt_BR.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_pt_BR.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_uk.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_ar.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ar.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_cs.qm',
+  ('PySide6/Qt/translations/qt_bg.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_cs.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_bg.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_zh_CN.qm',
+  ('PySide6/Qt/translations/qt_help_zh_TW.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_zh_CN.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_zh_TW.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qtbase_cs.qm',
+  ('PySide6/Qt/translations/qt_help_fr.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_cs.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_fr.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_hu.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_hu.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_ca.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ca.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_nn.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_nn.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_ar.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ar.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_gl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_gl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_uk.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_uk.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_nl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_nl.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_da.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_da.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_hr.qm',
+  ('PySide6/Qt/translations/qtbase_es.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_hr.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_es.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_sl.qm',
+  ('PySide6/Qt/translations/qt_ko.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_sl.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ko.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_de.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_de.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_zh_CN.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
@@ -495,160 +495,330 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_lv.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_ca.qm',
+  ('PySide6/Qt/translations/qt_ar.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ca.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ar.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_nl.qm',
+  ('PySide6/Qt/translations/qt_ja.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_nl.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ja.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_uk.qm',
+  ('PySide6/Qt/translations/qt_help_de.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_uk.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_de.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qtbase_bg.qm',
+  ('PySide6/Qt/translations/qt_fr.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_bg.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_fr.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_ka.qm',
+  ('PySide6/Qt/translations/qt_help_sl.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ka.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_sl.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_fr.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_fr.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_zh_TW.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_zh_TW.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_gl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_gl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_fr.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_fr.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_it.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_it.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_bg.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_bg.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_fa.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_fa.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_gl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_gl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_ca.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ca.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_zh_CN.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_zh_CN.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_nn.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_nn.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_it.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_it.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_pt_BR.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_pt_BR.qm',
-   'DATA'),
   ('PySide6/Qt/translations/qt_hu.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_hu.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qtbase_ko.qm',
+  ('PySide6/Qt/translations/qtbase_zh_TW.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ko.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_ru.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ru.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_uk.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_uk.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_es.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_es.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_de.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_de.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_zh_TW.qm',
    'DATA'),
   ('PySide6/Qt/translations/qt_zh_TW.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_zh_TW.qm',
    'DATA'),
+  ('PySide6/Qt/translations/qt_sv.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_sv.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_tr.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_tr.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_cs.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_cs.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_pl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_pl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_tr.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_tr.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_hu.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_hu.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_en.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_en.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_da.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_da.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_lv.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_lv.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_ja.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ja.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_es.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_es.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_ko.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ko.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_cs.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_cs.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_ko.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ko.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_pt_BR.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_pt_BR.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_ka.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ka.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_fa.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_fa.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_hr.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_hr.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_en.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_en.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_ka.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ka.qm',
+   'DATA'),
   ('PySide6/Qt/translations/qtbase_ca.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ca.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_help_ru.qm',
+  ('PySide6/Qt/translations/qt_help_da.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ru.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_da.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_ar.qm',
+  ('PySide6/Qt/translations/qt_sk.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ar.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_sk.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_nn.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_nn.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_bg.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_bg.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_ka.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ka.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_bg.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_bg.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_nl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_nl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_it.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_it.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_hr.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_hr.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_en.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_en.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_cs.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_cs.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_fa.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_fa.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_pl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_pl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_hr.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_hr.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_zh_CN.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_zh_CN.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_he.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_he.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_it.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_it.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_es.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_es.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_nn.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_nn.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_ru.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ru.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_lt.qm',
+  ('PySide6/Qt/translations/qtbase_uk.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_lt.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_uk.qm',
    'DATA'),
   ('PySide6/Qt/translations/qtbase_sk.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_sk.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_sl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_sl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_de.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_de.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_fi.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_fi.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_pl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_pl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_it.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_it.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_ja.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ja.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_ru.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ru.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qtbase_fi.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_fi.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_sk.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_sk.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_pt_BR.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_pt_BR.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_gl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_gl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_nl.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_nl.qm',
+   'DATA'),
+  ('PySide6/Qt/translations/qt_help_tr.qm',
+   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
+   'Ablage/FH  OOE/Master '
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_tr.qm',
    'DATA'),
   ('PySide6/Qt/translations/qt_gd.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
@@ -660,195 +830,25 @@
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_he.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qtbase_ja.qm',
+  ('PySide6/Qt/translations/qt_help_pt_BR.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ja.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_pt_BR.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qtbase_hr.qm',
+  ('PySide6/Qt/translations/qt_lt.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_hr.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_lt.qm',
    'DATA'),
-  ('PySide6/Qt/translations/qt_fi.qm',
+  ('PySide6/Qt/translations/qt_help_ca.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_fi.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_sv.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_sv.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_en.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_en.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_pl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_pl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_tr.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_tr.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_tr.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_tr.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_hu.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_hu.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_zh_TW.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_zh_TW.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_nl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_nl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_pl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_pl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_tr.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_tr.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_en.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_en.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_sk.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_sk.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_es.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_es.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_es.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_es.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_hr.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_hr.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_it.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_it.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_ka.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_ka.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_de.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_de.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_ka.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ka.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_bg.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_bg.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_ko.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ko.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_nn.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_nn.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_fa.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_fa.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_hu.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_hu.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_pl.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_pl.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_he.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_he.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_ko.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_ko.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_da.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_da.qm',
+   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ca.qm',
    'DATA'),
   ('PySide6/Qt/translations/qt_pt_PT.qm',
    '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
    'Ablage/FH  OOE/Master '
    'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_pt_PT.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_da.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_da.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_sk.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_sk.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_nn.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_nn.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_help_ar.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_help_ar.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qtbase_uk.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qtbase_uk.qm',
-   'DATA'),
-  ('PySide6/Qt/translations/qt_fr.qm',
-   '/Users/tobia/Library/CloudStorage/GoogleDrive-tobias.kornfelder@gmail.com/Meine '
-   'Ablage/FH  OOE/Master '
-   'MEWI/Masterarbeit/spielzeit_app/venv/lib/python3.13/site-packages/PySide6/Qt/translations/qt_fr.qm',
    'DATA'),
   ('Python', 'Python.framework/Versions/3.13/Python', 'SYMLINK'),
   ('base_library.zip',
@@ -865,11 +865,15 @@
    'PySide6/Qt/lib/QtNetwork.framework/Versions/A/QtNetwork',
    'SYMLINK'),
   ('QtSvg', 'PySide6/Qt/lib/QtSvg.framework/Versions/A/QtSvg', 'SYMLINK'),
-  ('QtPdf', 'PySide6/Qt/lib/QtPdf.framework/Versions/A/QtPdf', 'SYMLINK'),
+  ('QtQmlModels',
+   'PySide6/Qt/lib/QtQmlModels.framework/Versions/A/QtQmlModels',
+   'SYMLINK'),
+  ('QtVirtualKeyboard',
+   'PySide6/Qt/lib/QtVirtualKeyboard.framework/Versions/A/QtVirtualKeyboard',
+   'SYMLINK'),
   ('QtOpenGL',
    'PySide6/Qt/lib/QtOpenGL.framework/Versions/A/QtOpenGL',
    'SYMLINK'),
-  ('QtQuick', 'PySide6/Qt/lib/QtQuick.framework/Versions/A/QtQuick', 'SYMLINK'),
   ('QtQml', 'PySide6/Qt/lib/QtQml.framework/Versions/A/QtQml', 'SYMLINK'),
   ('QtQmlWorkerScript',
    'PySide6/Qt/lib/QtQmlWorkerScript.framework/Versions/A/QtQmlWorkerScript',
@@ -877,19 +881,15 @@
   ('QtVirtualKeyboardQml',
    'PySide6/Qt/lib/QtVirtualKeyboardQml.framework/Versions/A/QtVirtualKeyboardQml',
    'SYMLINK'),
-  ('QtVirtualKeyboard',
-   'PySide6/Qt/lib/QtVirtualKeyboard.framework/Versions/A/QtVirtualKeyboard',
-   'SYMLINK'),
-  ('QtQmlModels',
-   'PySide6/Qt/lib/QtQmlModels.framework/Versions/A/QtQmlModels',
-   'SYMLINK'),
+  ('QtQuick', 'PySide6/Qt/lib/QtQuick.framework/Versions/A/QtQuick', 'SYMLINK'),
   ('QtQmlMeta',
    'PySide6/Qt/lib/QtQmlMeta.framework/Versions/A/QtQmlMeta',
    'SYMLINK'),
-  ('libpyside6.abi3.6.9.dylib', 'PySide6/libpyside6.abi3.6.9.dylib', 'SYMLINK'),
+  ('QtPdf', 'PySide6/Qt/lib/QtPdf.framework/Versions/A/QtPdf', 'SYMLINK'),
   ('libshiboken6.abi3.6.9.dylib',
    'shiboken6/libshiboken6.abi3.6.9.dylib',
    'SYMLINK'),
+  ('libpyside6.abi3.6.9.dylib', 'PySide6/libpyside6.abi3.6.9.dylib', 'SYMLINK'),
   ('QtDBus', 'PySide6/Qt/lib/QtDBus.framework/Versions/A/QtDBus', 'SYMLINK'),
   ('PySide6/Qt/lib/QtCore.framework/QtCore',
    'Versions/Current/QtCore',
