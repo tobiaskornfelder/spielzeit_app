@@ -2,11 +2,11 @@ import sys, os, math, json, re
 from pathlib import Path
 
 from PySide6.QtCore import Qt, QSize, QRect, QRectF, QPoint, QPointF
-from PySide6.QtGui import QPainter, QPen, QFont, QColor, QPixmap, QGuiApplication
+from PySide6.QtGui import QPainter, QPen, QFont, QColor, QPixmap, QGuiApplication, QIcon
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QFrame, QLabel, QPushButton,
     QVBoxLayout, QHBoxLayout, QTableWidget, QTableWidgetItem, QComboBox,
-    QFileDialog, QMessageBox, QDialog, QDialogButtonBox, QStyleFactory   # <-- neu
+    QFileDialog, QMessageBox, QDialog, QDialogButtonBox, QStyleFactory, QLineEdit   # <-- neu
 )
 
 # ---------------------------------------------------------
@@ -82,6 +82,9 @@ def _builtin_dark_qss() -> str:
     #H2                 { color:#e5ecf5; font-size:18px; font-weight:700; }
     #H3                 { color:#cbd5e1; font-size:14px; font-weight:600; }
     #Caption            { color:#aab8c6; font-size:12px; }
+    QPushButton#SidebarButton > QIcon {
+        color: #ffffff;
+    }
     """
 
 def _builtin_light_qss() -> str:
@@ -101,6 +104,9 @@ def _builtin_light_qss() -> str:
     #H2                 { color:#111827; font-size:18px; font-weight:700; }
     #H3                 { color:#374151; font-size:14px; font-weight:600; }
     #Caption            { color:#4b5563; font-size:12px; }
+    QPushButton#SidebarButton > QIcon {
+        color: #0f1720;
+    }
     """
 
 def load_stylesheet(app: QApplication, theme: str):
@@ -230,6 +236,50 @@ class FEMCaseView(QWidget):
             p.drawPoint(pt)
             p.drawText(pt + QPointF(6, -6), label)
 
+class NewProjectDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Neues Projekt")
+        self.setMinimumSize(400, 240)
+        self.result_data = None
+
+        layout = QVBoxLayout(self)
+        layout.setContentsMargins(24, 24, 24, 24)
+        layout.setSpacing(12)
+
+        self.nr_input = QLineEdit()
+        self.nr_input.setPlaceholderText("Projektnummer")
+        self.name_input = QLineEdit()
+        self.name_input.setPlaceholderText("Projektname")
+        self.desc_input = QLineEdit()
+        self.desc_input.setPlaceholderText("Projektbeschreibung (optional)")
+
+        layout.addWidget(QLabel("Projektnummer:"))
+        layout.addWidget(self.nr_input)
+        layout.addWidget(QLabel("Projektname:"))
+        layout.addWidget(self.name_input)
+        layout.addWidget(QLabel("Projektbeschreibung:"))
+        layout.addWidget(self.desc_input)
+
+        buttons = QDialogButtonBox(QDialogButtonBox.Ok | QDialogButtonBox.Cancel)
+        buttons.accepted.connect(self.accept)
+        buttons.rejected.connect(self.reject)
+        layout.addWidget(buttons)
+
+    def accept(self):
+        nr = self.nr_input.text().strip()
+        name = self.name_input.text().strip()
+        desc = self.desc_input.text().strip()
+        if not nr or not name:
+            QMessageBox.warning(self, "Fehler", "Projektnummer und -name dürfen nicht leer sein.")
+            return
+        self.result_data = {
+            "nummer": nr,
+            "name": name,
+            "beschreibung": desc
+        }
+        super().accept()
+
 # ---------------------------------------------------------
 # Settings
 # ---------------------------------------------------------
@@ -253,13 +303,6 @@ class SettingsDialog(QDialog):
                 logo_lbl.setPixmap(pm.scaledToWidth(220, Qt.SmoothTransformation))
         v.addWidget(logo_lbl)
 
-        row = QHBoxLayout(); row.setSpacing(12)
-        row.addWidget(QLabel("Theme:"))
-        self.theme_combo = QComboBox()
-        self.theme_combo.addItems(["light", "dark"])
-        self.theme_combo.setCurrentText(current_theme)
-        row.addWidget(self.theme_combo, 1)
-        v.addLayout(row)
 
         manual_btn = QPushButton("📘 User Manual")
         manual_btn.clicked.connect(self.show_manual)
@@ -281,7 +324,7 @@ class SettingsDialog(QDialog):
         )
 
     def accept(self):
-        self._on_apply(self.theme_combo.currentText())
+        self._on_apply("dark")  # or remove this call entirely if not needed anymore
         super().accept()
 
 # ---------------------------------------------------------
@@ -319,18 +362,36 @@ class MainWindow(QMainWindow):
         # nach Konstruktion: Paletten anwenden
         self.apply_runtime_palettes(self.current_theme)
 
-    # Sidebar
-    def _sidebar_button(self, text: str) -> QPushButton:
-        b = QPushButton(text); b.setObjectName("SidebarButton"); b.setCursor(Qt.PointingHandCursor); b.setMinimumHeight(44); return b
-
     def _build_sidebar(self) -> QFrame:
-        f = QFrame(); f.setObjectName("Sidebar"); f.setFixedWidth(240)
-        lay = QVBoxLayout(f); lay.setContentsMargins(14, 14, 14, 14); lay.setSpacing(10)
-        lay.addWidget(QLabel("  ▸  MENU"))
-        self.btn_home, self.btn_new, self.btn_open, self.btn_save, self.btn_export = [self._sidebar_button(t) for t in ("Home","New","Open","Save","Export")]
-        for b in (self.btn_home, self.btn_new, self.btn_open, self.btn_save, self.btn_export): lay.addWidget(b)
+        f = QFrame(); f.setObjectName("Sidebar"); f.setFixedWidth(60)
+        lay = QVBoxLayout(f); lay.setContentsMargins(8, 8, 8, 8); lay.setSpacing(10)
+
+        def icon_button(text: str, icon_path: str) -> QPushButton:
+            b = QPushButton(); b.setObjectName("SidebarButton")
+            b.setCursor(Qt.PointingHandCursor)
+            b.setFixedSize(44, 44)
+            b.setToolTip(text)
+            icon_file = resource_path(f"resources/icons/{icon_path}")
+            if icon_file.exists():
+                b.setIcon(QIcon(str(icon_file)))
+                b.setIconSize(QSize(24, 24))
+            return b
+
+        self.btn_new    = icon_button("New",    "new.png")
+        self.btn_open   = icon_button("Open",   "open.png")
+        self.btn_save   = icon_button("Save",   "save.png")
+        self.btn_export = icon_button("Export", "export.png")
+        self.btn_settings = icon_button("Settings", "settings.png")
+        # Theme toggle button (replaces sun and moon)
+        self.btn_theme_toggle = icon_button("Dark Mode", "moon.png")
+        self.btn_theme_toggle.clicked.connect(self.toggle_theme)
+
+        for b in (self.btn_new, self.btn_open, self.btn_save, self.btn_export):
+            lay.addWidget(b, 0, Qt.AlignHCenter)
         lay.addStretch(1)
-        self.btn_settings = self._sidebar_button("Settings"); lay.addWidget(self.btn_settings)
+        lay.addWidget(self.btn_theme_toggle, 0, Qt.AlignHCenter)
+        lay.addWidget(self.btn_settings, 0, Qt.AlignHCenter)
+
         return f
 
     # Topbar
@@ -344,10 +405,11 @@ class MainWindow(QMainWindow):
             if not pm.isNull(): logo.setPixmap(pm.scaledToHeight(28, Qt.SmoothTransformation))
         h.addWidget(logo, 0, Qt.AlignVCenter)
 
-        title = QLabel("Spielzeit-Berechnung  •  FEM 9.831/9.832/9.842-1"); title.setObjectName("TopbarTitle"); h.addWidget(title, 1)
+        self.topbar_title = QLabel("Spielzeitberechnung"); self.topbar_title.setObjectName("TopbarTitle"); h.addWidget(self.topbar_title, 1)
 
         self.combo_device = QComboBox(); self.combo_device.setObjectName("DeviceCombo")  # <-- wichtig
-        self.combo_device.addItems(["RBG Einmast (1x tief)","RBG Zweimast (2x tief)","Heber","AKF / Shuttle","AKL (Mini-Load)"]); self.combo_device.setFixedWidth(220)
+        self.combo_device.clear()
+        self.combo_device.addItems(["RBG 1 Mast", "RBG 2 Mast"]); self.combo_device.setFixedWidth(220)
 
         self.combo_case   = QComboBox(); self.combo_case.setObjectName("CaseCombo")       # <-- wichtig
         self.combo_case.addItems([f"FEM 9.851 – Fall {i}" for i in range(1,7)]); self.combo_case.setFixedWidth(160)
@@ -359,58 +421,184 @@ class MainWindow(QMainWindow):
 
     # Dashboard
     def _build_dashboard(self) -> QWidget:
+        from PySide6.QtWidgets import QFormLayout, QSizePolicy, QGroupBox, QSpacerItem
         page = QWidget()
-        v = QVBoxLayout(page); v.setContentsMargins(18, 18, 18, 18); v.setSpacing(16)
+        v = QVBoxLayout(page)
+        v.setContentsMargins(18, 18, 18, 18)
+        v.setSpacing(16)
 
-        hdr = QLabel("Übersicht"); hdr.setObjectName("H2"); v.addWidget(hdr)
+        # Main horizontal layout: Eingabemaske (left), right: donut row + graph below
+        main_hbox = QHBoxLayout()
+        main_hbox.setContentsMargins(0, 0, 0, 0)
+        main_hbox.setSpacing(18)
 
-        prog_row = QHBoxLayout(); prog_row.setSpacing(22)
-        self.progress_a = CircularProgress(80)
-        self.progress_b = CircularProgress(45)
-        self.progress_c = CircularProgress(75)
+        # --- Eingabemaske (left section) ---
+        eingabe_box = QGroupBox()
+        eingabe_layout = QFormLayout()
+        eingabe_layout.setLabelAlignment(Qt.AlignLeft)
+        eingabe_layout.setFormAlignment(Qt.AlignTop)
+        eingabe_layout.setHorizontalSpacing(16)
+        eingabe_layout.setVerticalSpacing(6)
+        eingabe_box.setLayout(eingabe_layout)
+        # Reduce Eingabemaske width to just fit content
+        eingabe_box.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Expanding)
+        # Define all input fields as QLineEdits, labels include units (not in input fields)
+        self.input_fields = {}
+        labels = [
+            ("Verfahrw. (Gassenl.-Anfahrm.) [m]", "verfahrweg"),
+            ("Gassenhöhe [m]", "gassenhoehe"),
+            ("Geschw vx [m/s]", "geschw_vx"),
+            ("Beschl ax [m/s²]", "beschl_ax"),
+            ("Verschliffzeiten x [s]", "verschliff_x"),
+            ("Geschw vy [m/s]", "geschw_vy"),
+            ("Beschl ay [m/s²]", "beschl_ay"),
+            ("Verschliffzeiten y [s]", "verschliff_y"),
+            ("Übergabe Vorzone einlagern [s]", "vorzone_einlagern"),
+            ("Übergabe Vorzone auslagern [s]", "vorzone_auslagern"),
+            ("Übergabe Platz 1 [s]", "platz1"),
+            ("Übergabe Platz 2 [s]", "platz2"),
+            ("Verschliffzeit LAM [s]", "verschliff_lam"),
+            ("Anteil der Umlagerungen [%]", "umlagerungen_anteil"),
+        ]
+        for label, key in labels:
+            le = QLineEdit()
+            le.setFixedWidth(100)
+            self.input_fields[key] = le
+            lbl = QLabel(label)
+            eingabe_layout.addRow(lbl, le)
+        eingabe_box.setMaximumWidth(eingabe_box.sizeHint().width())
 
-        def col(caption):
-            lay = QVBoxLayout(); lay.setContentsMargins(0,0,0,0); lay.setSpacing(8)
-            lab = QLabel(caption); lab.setObjectName("Caption"); lab.setAlignment(Qt.AlignHCenter)
-            lay.addWidget(lab, 0, Qt.AlignHCenter); return lay
+        # --- Right section: donut row on top, graph below ---
+        right_vbox = QVBoxLayout()
+        right_vbox.setContentsMargins(0, 0, 0, 0)
+        right_vbox.setSpacing(0)
 
-        c1, c2, c3 = col("Durchsatz vs. Ziel"), col("Anteil Fahr/Hub"), col("Auslastung Gerät")
-        for prog, lay in [(self.progress_a,c1),(self.progress_b,c2),(self.progress_c,c3)]:
-            w = QWidget(); w.setLayout(lay); lay.insertWidget(0, prog, 0, Qt.AlignHCenter); prog_row.addWidget(w,1)
-        v.addLayout(prog_row)
+        # Donut row (horizontal, top right, evenly spaced)
+        progress_palette_dict = progress_palette(self.current_theme)
+        self.progress1 = CircularProgress(value=72, thickness=8,
+                                          color=progress_palette_dict["color"],
+                                          track=progress_palette_dict["track"],
+                                          text_color=progress_palette_dict["text"])
+        self.progress2 = CircularProgress(value=38, thickness=8,
+                                          color=progress_palette_dict["color"],
+                                          track=progress_palette_dict["track"],
+                                          text_color=progress_palette_dict["text"])
+        self.progress3 = CircularProgress(value=55, thickness=8,
+                                          color=progress_palette_dict["color"],
+                                          track=progress_palette_dict["track"],
+                                          text_color=progress_palette_dict["text"])
+        for p in (self.progress1, self.progress2, self.progress3):
+            p.setMinimumSize(80, 80)
+            p.setMaximumSize(90, 90)
+        donut_labels = [
+            ("Durchsatz vs. Ziel", self.progress1),
+            ("Anteil Fahr/Hub", self.progress2),
+            ("Auslastung Gerät", self.progress3),
+        ]
+        donut_hbox = QHBoxLayout()
+        donut_hbox.setContentsMargins(0, 0, 0, 0)
+        donut_hbox.setSpacing(0)
+        donut_hbox.addStretch(1)
+        for text, prog in donut_labels:
+            donut_wrap = QWidget()
+            donut_wrap_lay = QVBoxLayout(donut_wrap)
+            donut_wrap_lay.setContentsMargins(0, 0, 0, 0)
+            donut_wrap_lay.setSpacing(2)
+            donut_wrap_lay.addWidget(prog, 0, Qt.AlignHCenter)
+            lbl = QLabel(text)
+            lbl.setObjectName("Caption")
+            lbl.setAlignment(Qt.AlignHCenter)
+            donut_wrap_lay.addWidget(lbl, 0, Qt.AlignHCenter)
+            donut_hbox.addWidget(donut_wrap, 0, Qt.AlignVCenter)
+            donut_hbox.addStretch(1)
+        right_vbox.addLayout(donut_hbox)
 
+        # Visualization graph below donut row, aligns bottom with Eingabemaske's bottom
         self.case_view = FEMCaseView(theme=self.current_theme)
-        v.addWidget(self.case_view)
+        self.case_view.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        # Remove any fixed height, instead use a layout trick to tightly align top and bottom
 
-        tbl_title = QLabel("Letzte Berechnungen"); tbl_title.setObjectName("H3"); v.addWidget(tbl_title)
-        self.table = QTableWidget(0,5); self.table.setHorizontalHeaderLabels(["Gerät","vx [m/s]","vy [m/s]","Spielzeit [s]","Zyklus [s]"])
-        self._push_row("RBG Einmast (1x tief)", "3.0", "1.4", "21.9", "26.1")
-        self._push_row("RBG Zweimast (2x tief)", "3.5", "1.5", "19.8", "25.2")
-        v.addWidget(self.table)
+        # We'll use a vertical layout with donut row, then the visualization, then a spacer for possible future widgets
+        # To align the visualization's top with the bottom of the donut row, and its bottom with the bottom of the Eingabemaske,
+        # we use a QVBoxLayout with stretch factors.
+
+        # To determine the height of Eingabemaske after layout, we need to defer setting the visualization height until after layout.
+        # Instead, we'll use a QSpacerItem below the visualization to always leave space for possible future widgets.
+        # The visualization will expand to fill the space between the donut row and the bottom of Eingabemaske.
+
+        # Add visualization
+        right_vbox.addWidget(self.case_view, 1)
+        # Add a spacer below for future expansion (but nothing is shown yet)
+        right_vbox.addSpacing(20)
+
+        # Layout: Eingabemaske left, right_vbox right
+        main_hbox.addWidget(eingabe_box, 0, Qt.AlignTop)
+        # Add a little spacing between Eingabemaske and donuts/graph
+        main_hbox.addSpacing(18)
+        main_hbox.addLayout(right_vbox, 1)
+
+        v.addLayout(main_hbox, 1)
+
+        # Remove "Übersicht" and "Eingabemaske" labels if present
+        # (None are explicitly added, so nothing to remove)
+
         return page
 
-    def _push_row(self, device, vx, vy, spiel, zyklus):
-        r = self.table.rowCount(); self.table.insertRow(r)
-        for c, val in enumerate([device, vx, vy, spiel, zyklus]):
-            self.table.setItem(r, c, QTableWidgetItem(val))
+    def _update_input_form(self, idx):
+        # Not used anymore; Eingabemaske is always visible now.
+        pass
+
+    # The _push_row method is no longer needed and has been removed.
 
     # ---- Theme anwenden (nur Laufzeit-Farben) ----
     def apply_runtime_palettes(self, theme: str):
-        ppal = progress_palette(theme)
-        for prog in (self.progress_a, self.progress_b, self.progress_c):
-            prog.set_palette(ppal["color"], ppal["track"], ppal["text"])
+        # Update progress indicators
+        pal = progress_palette(theme)
+        if hasattr(self, "progress1"):
+            self.progress1.set_palette(pal["color"], pal["track"], pal["text"])
+        if hasattr(self, "progress2"):
+            self.progress2.set_palette(pal["color"], pal["track"], pal["text"])
+        if hasattr(self, "progress3"):
+            self.progress3.set_palette(pal["color"], pal["track"], pal["text"])
         self.case_view.set_theme(theme)
 
     # Actions
-    def action_new(self):  QMessageBox.information(self, "Neu", "Neues Projekt angelegt (Platzhalter).")
-    def action_open(self): QFileDialog.getOpenFileName(self, "Projekt öffnen", str(DATA_DIR), "Projektdateien (*.json);;Alle Dateien (*)")
+    def action_new(self):
+        dlg = NewProjectDialog(self)
+        if dlg.exec() == QDialog.Accepted and dlg.result_data:
+            data = dlg.result_data
+            ordnername = f"{data['nummer']} - {data['name']}".replace("/", "_")
+            pfad = QFileDialog.getExistingDirectory(self, "Speicherort für neues Projekt wählen", str(DATA_DIR))
+            if not pfad:
+                return
+            projektordner = Path(pfad) / ordnername
+            projektordner.mkdir(parents=True, exist_ok=True)
+            safe_name = f"{data['nummer']}_{data['name']}".replace("/", "_").replace(" ", "_")
+            info_datei = projektordner / f"{safe_name}.json"
+            info_datei.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            QMessageBox.information(self, "Projekt erstellt", f"Projekt gespeichert:\n{info_datei}")
+            self.topbar_title.setText(f"Spielzeitberechnung {data['nummer']} {data['name']}")
+
+    def action_open(self):
+        path, _ = QFileDialog.getOpenFileName(self, "Projekt öffnen", str(DATA_DIR), "Projektdateien (*.json);;Alle Dateien (*)")
+        if path:
+            try:
+                data = json.loads(Path(path).read_text(encoding="utf-8"))
+                nummer = data.get("nummer", "Unbekannt")
+                name = data.get("name", "Unbenannt")
+                self.topbar_title.setText(f"Spielzeitberechnung {nummer} {name}")
+                QMessageBox.information(self, "Projekt geöffnet", f"Projekt geladen:\n{path}")
+            except Exception as e:
+                QMessageBox.critical(self, "Fehler", f"Fehler beim Laden:\n{e}")
     def action_save(self):
         path, _ = QFileDialog.getSaveFileName(self, "Projekt speichern", str(DATA_DIR / "projekt.json"), "Projektdateien (*.json)")
         if path:
             Path(path).write_text(json.dumps({"demo": True}, indent=2), encoding="utf-8")
             QMessageBox.information(self, "Gespeichert", f"Projekt gespeichert:\n{path}")
     def action_export(self):
-        path, _ = QFileDialog.getSaveFileName(self, "Exportieren als PDF", str(EXPORTS_DIR / "bericht.pdf"), "PDF (*.pdf)")
+        topbar_text = self.topbar_title.text().replace("Spielzeitberechnung", "").strip()
+        safe_name = topbar_text.replace(" ", "_").replace("/", "_")
+        path, _ = QFileDialog.getSaveFileName(self, "Exportieren als PDF", str(EXPORTS_DIR / f"{safe_name}.pdf"), "PDF (*.pdf)")
         if path:
             Path(path).write_bytes(b"%PDF-1.4\n%...\n")
             QMessageBox.information(self, "Export", f"PDF exportiert:\n{path}")
@@ -423,33 +611,21 @@ class MainWindow(QMainWindow):
         cfg = load_config(); cfg["theme"] = self.current_theme; save_config(cfg)
         load_stylesheet(self.app, self.current_theme)   # QSS
         self.apply_runtime_palettes(self.current_theme) # Zeichnen
+        # Update theme toggle button icon
+        new_icon = "moon.png" if self.current_theme == "light" else "sun.png"
+        icon_file = resource_path(f"resources/icons/{new_icon}")
+        if icon_file.exists():
+            self.btn_theme_toggle.setIcon(QIcon(str(icon_file)))
+            self.btn_theme_toggle.setIconSize(QSize(24, 24))
+
+    def toggle_theme(self):
+        new_theme = "dark" if self.current_theme == "light" else "light"
+        self.apply_theme(new_theme)
 
     # Demo-Rechnung
     def action_calculate(self):
-        dev = self.combo_device.currentText()
-        vx, ax = 3.0, 0.35; vy, ay = 1.4, 0.8
-        case_idx = self.combo_case.currentIndex() + 1
-        x, y = (26.5, 24.7) if case_idx == 1 else (22.0, 28.0) if case_idx == 2 else (25.0, 25.0)
-
-        def move_time(s, vmax, a):
-            s_acc = vmax*vmax/(2*a)
-            return 2*(vmax/a) + (s-2*s_acc)/vmax if 2*s_acc <= s else 2*math.sqrt(s/(2*a))
-
-        t_x = move_time(x, vx, ax); t_y = move_time(y, vy, ay); t_fix = 2.5 + 2.5 + 9.3
-        t_spiel = t_x + t_y + t_fix; t_zyklus = t_spiel + 3.0
-
-        self._push_row(dev, f"{vx:.1f}", f"{vy:.1f}", f"{t_spiel:.1f}", f"{t_zyklus:.1f}")
-
-        move = t_x + t_y
-        move_pct = int(round(min(100, max(0, (move / max(0.001, t_spiel)) * 100))))
-        t_ref = 25.0
-        throughput_pct = int(round(min(100, max(0, (t_ref / max(0.001, t_spiel)) * 100))))
-        cps = 3600.0 / max(0.001, t_zyklus)
-        util_pct = int(round(min(100, max(0, (cps / 120.0) * 100))))
-
-        self.progress_a.setValue(throughput_pct)
-        self.progress_b.setValue(move_pct)
-        self.progress_c.setValue(util_pct)
+        # Calculation logic can be kept for future use, but progress indicators are removed.
+        pass
 
 # ---------------------------------------------------------
 # Run
