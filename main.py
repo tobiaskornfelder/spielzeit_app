@@ -421,28 +421,13 @@ class MainWindow(QMainWindow):
 
     # Dashboard
     def _build_dashboard(self) -> QWidget:
-        from PySide6.QtWidgets import QFormLayout, QSizePolicy, QGroupBox, QSpacerItem
-        page = QWidget()
-        v = QVBoxLayout(page)
-        v.setContentsMargins(18, 18, 18, 18)
-        v.setSpacing(16)
-
-        # Main horizontal layout: Eingabemaske (left), right: donut row + graph below
-        main_hbox = QHBoxLayout()
-        main_hbox.setContentsMargins(0, 0, 0, 0)
-        main_hbox.setSpacing(18)
-
-        # --- Eingabemaske (left section) ---
-        eingabe_box = QGroupBox()
-        eingabe_layout = QFormLayout()
-        eingabe_layout.setLabelAlignment(Qt.AlignLeft)
-        eingabe_layout.setFormAlignment(Qt.AlignTop)
-        eingabe_layout.setHorizontalSpacing(16)
-        eingabe_layout.setVerticalSpacing(6)
-        eingabe_box.setLayout(eingabe_layout)
-        # Reduce Eingabemaske width to just fit content
-        eingabe_box.setSizePolicy(QSizePolicy.Maximum, QSizePolicy.Expanding)
-        # Define all input fields as QLineEdits, labels include units (not in input fields)
+        from PySide6.QtWidgets import QFormLayout, QSizePolicy, QTextEdit, QLabel, QFrame, QVBoxLayout, QHBoxLayout, QWidget
+        # -------- Eingabeformular vorbereiten --------
+        input_form_layout = QFormLayout()
+        input_form_layout.setLabelAlignment(Qt.AlignLeft)
+        input_form_layout.setFormAlignment(Qt.AlignTop)
+        input_form_layout.setHorizontalSpacing(12)
+        input_form_layout.setVerticalSpacing(6)
         self.input_fields = {}
         labels = [
             ("Verfahrw. (Gassenl.-Anfahrm.) [m]", "verfahrweg"),
@@ -460,89 +445,154 @@ class MainWindow(QMainWindow):
             ("Verschliffzeit LAM [s]", "verschliff_lam"),
             ("Anteil der Umlagerungen [%]", "umlagerungen_anteil"),
         ]
+        from PySide6.QtWidgets import QLineEdit
         for label, key in labels:
             le = QLineEdit()
             le.setFixedWidth(100)
+            le.setObjectName("InputField")
             self.input_fields[key] = le
             lbl = QLabel(label)
-            eingabe_layout.addRow(lbl, le)
-        eingabe_box.setMaximumWidth(eingabe_box.sizeHint().width())
+            lbl.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
+            input_form_layout.addRow(lbl, le)
 
-        # --- Right section: donut row on top, graph below ---
-        right_vbox = QVBoxLayout()
-        right_vbox.setContentsMargins(0, 0, 0, 0)
-        right_vbox.setSpacing(0)
-
-        # Donut row (horizontal, top right, evenly spaced)
+        # -------- KPIs vorbereiten --------
         progress_palette_dict = progress_palette(self.current_theme)
-        self.progress1 = CircularProgress(value=72, thickness=8,
+        self.kpi_throughput = CircularProgress(value=72, thickness=8,
+                                               color=progress_palette_dict["color"],
+                                               track=progress_palette_dict["track"],
+                                               text_color=progress_palette_dict["text"])
+        self.kpi_ratio = CircularProgress(value=38, thickness=8,
                                           color=progress_palette_dict["color"],
                                           track=progress_palette_dict["track"],
                                           text_color=progress_palette_dict["text"])
-        self.progress2 = CircularProgress(value=38, thickness=8,
-                                          color=progress_palette_dict["color"],
-                                          track=progress_palette_dict["track"],
-                                          text_color=progress_palette_dict["text"])
-        self.progress3 = CircularProgress(value=55, thickness=8,
-                                          color=progress_palette_dict["color"],
-                                          track=progress_palette_dict["track"],
-                                          text_color=progress_palette_dict["text"])
-        for p in (self.progress1, self.progress2, self.progress3):
+        self.kpi_utilization = CircularProgress(value=55, thickness=8,
+                                               color=progress_palette_dict["color"],
+                                               track=progress_palette_dict["track"],
+                                               text_color=progress_palette_dict["text"])
+        for p in (self.kpi_throughput, self.kpi_ratio, self.kpi_utilization):
             p.setMinimumSize(80, 80)
             p.setMaximumSize(90, 90)
-        donut_labels = [
-            ("Durchsatz vs. Ziel", self.progress1),
-            ("Anteil Fahr/Hub", self.progress2),
-            ("Auslastung Gerät", self.progress3),
+
+        # -------- Leistungsbetrachtungstabelle vorbereiten --------
+        from PySide6.QtWidgets import QTableWidget, QTableWidgetItem
+        self.performance_table_layout = QVBoxLayout()
+        self.performance_table_layout.setContentsMargins(0, 0, 0, 0)
+        self.performance_table_layout.setSpacing(0)
+        self.leistungs_table = QTableWidget(3, 3)
+        self.leistungs_table.setHorizontalHeaderLabels(["Kriterium", "Wert", "Einheit"])
+        self.leistungs_table.setVerticalHeaderLabels(["Leistung 1", "Leistung 2", "Leistung 3"])
+        self.leistungs_table.setFixedHeight(200)
+        beispiel_daten = [
+            ("Durchsatz", "120", "Pal/h"),
+            ("Fahrzeit", "35", "s"),
+            ("Auslastung", "80", "%"),
         ]
-        donut_hbox = QHBoxLayout()
-        donut_hbox.setContentsMargins(0, 0, 0, 0)
-        donut_hbox.setSpacing(0)
-        donut_hbox.addStretch(1)
-        for text, prog in donut_labels:
-            donut_wrap = QWidget()
-            donut_wrap_lay = QVBoxLayout(donut_wrap)
-            donut_wrap_lay.setContentsMargins(0, 0, 0, 0)
-            donut_wrap_lay.setSpacing(2)
-            donut_wrap_lay.addWidget(prog, 0, Qt.AlignHCenter)
-            lbl = QLabel(text)
-            lbl.setObjectName("Caption")
-            lbl.setAlignment(Qt.AlignHCenter)
-            donut_wrap_lay.addWidget(lbl, 0, Qt.AlignHCenter)
-            donut_hbox.addWidget(donut_wrap, 0, Qt.AlignVCenter)
-            donut_hbox.addStretch(1)
-        right_vbox.addLayout(donut_hbox)
+        for row, (kriterium, wert, einheit) in enumerate(beispiel_daten):
+            self.leistungs_table.setItem(row, 0, QTableWidgetItem(kriterium))
+            self.leistungs_table.setItem(row, 1, QTableWidgetItem(wert))
+            self.leistungs_table.setItem(row, 2, QTableWidgetItem(einheit))
+        self.leistungs_table.horizontalHeader().setStretchLastSection(True)
+        self.leistungs_table.horizontalHeader().setDefaultSectionSize(110)
+        self.leistungs_table.verticalHeader().setDefaultSectionSize(32)
+        self.performance_table_layout.addWidget(self.leistungs_table)
 
-        # Visualization graph below donut row, aligns bottom with Eingabemaske's bottom
-        self.case_view = FEMCaseView(theme=self.current_theme)
-        self.case_view.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
-        # Remove any fixed height, instead use a layout trick to tightly align top and bottom
+        # -------- Visualisierung vorbereiten --------
+        self.canvas = FEMCaseView(theme=self.current_theme)
+        self.canvas.setMinimumHeight(120)
+        self.canvas.setMaximumHeight(180)
 
-        # We'll use a vertical layout with donut row, then the visualization, then a spacer for possible future widgets
-        # To align the visualization's top with the bottom of the donut row, and its bottom with the bottom of the Eingabemaske,
-        # we use a QVBoxLayout with stretch factors.
+        # -------- Kommentarfeld vorbereiten --------
+        self.notes_frame = QFrame()
+        self.notes_frame.setObjectName("NotesFrame")
+        notes_layout = QVBoxLayout()
+        notes_layout.setContentsMargins(8, 8, 8, 8)
+        self.notes_label = QLabel("Kommentarfeld")
+        self.notes_label.setObjectName("NotesLabel")
+        self.notes_edit = QTextEdit()
+        self.notes_edit.setObjectName("NotesEdit")
+        self.notes_edit.setPlaceholderText("Hier Notizen eingeben ...")
+        notes_layout.addWidget(self.notes_label)
+        notes_layout.addWidget(self.notes_edit)
+        self.notes_frame.setLayout(notes_layout)
 
-        # To determine the height of Eingabemaske after layout, we need to defer setting the visualization height until after layout.
-        # Instead, we'll use a QSpacerItem below the visualization to always leave space for possible future widgets.
-        # The visualization will expand to fill the space between the donut row and the bottom of Eingabemaske.
+        # -------- Hauptlayout gemäß Vorgabe (neu) --------
+        main_layout = QVBoxLayout()
+        main_layout.setContentsMargins(20, 10, 20, 10)
+        main_layout.setSpacing(15)
 
-        # Add visualization
-        right_vbox.addWidget(self.case_view, 1)
-        # Add a spacer below for future expansion (but nothing is shown yet)
-        right_vbox.addSpacing(20)
+        # --- Eingabe/KPI-Block ---
+        top_row_layout = QHBoxLayout()
+        top_row_layout.setSpacing(24)
 
-        # Layout: Eingabemaske left, right_vbox right
-        main_hbox.addWidget(eingabe_box, 0, Qt.AlignTop)
-        # Add a little spacing between Eingabemaske and donuts/graph
-        main_hbox.addSpacing(18)
-        main_hbox.addLayout(right_vbox, 1)
+        # Left: Eingabeformular (in Frame)
+        input_frame = QFrame()
+        input_frame.setObjectName("InputFrame")
+        input_frame.setLayout(input_form_layout)
+        input_frame.setSizePolicy(QSizePolicy.Preferred, QSizePolicy.Maximum)
+        top_row_layout.addWidget(input_frame, stretch=3)
 
-        v.addLayout(main_hbox, 1)
+        # Right: KPIs (vertically centered)
+        kpi_layout = QHBoxLayout()
+        kpi_layout.setSpacing(22)
+        kpi_layout.addWidget(self.kpi_throughput)
+        kpi_layout.addWidget(self.kpi_ratio)
+        kpi_layout.addWidget(self.kpi_utilization)
+        kpi_wrapper = QFrame()
+        kpi_wrapper.setLayout(kpi_layout)
+        kpi_wrapper.setObjectName("KPIWrapper")
+        top_row_layout.addWidget(kpi_wrapper, stretch=2)
 
-        # Remove "Übersicht" and "Eingabemaske" labels if present
-        # (None are explicitly added, so nothing to remove)
+        main_layout.addLayout(top_row_layout)
 
-        return page
+        # --- Visualisierung: Path chart uses full width below Eingabe/KPI ---
+        canvas_wrapper = QFrame()
+        canvas_layout = QVBoxLayout()
+        canvas_layout.setContentsMargins(0, 0, 0, 0)
+        canvas_layout.addWidget(self.canvas)
+        canvas_wrapper.setLayout(canvas_layout)
+        main_layout.addWidget(canvas_wrapper, stretch=0)
+
+        # --- Tabelle + Kommentarfeld (unten) ---
+        bottom_layout = QHBoxLayout()
+        bottom_layout.setSpacing(20)
+
+        table_frame = QFrame()
+        table_frame.setObjectName("TableFrame")
+        table_frame.setLayout(self.performance_table_layout)
+        bottom_layout.addWidget(table_frame, stretch=3)
+
+        bottom_layout.addWidget(self.notes_frame, stretch=1)
+
+        main_layout.addLayout(bottom_layout)
+
+        # Setze das neue Layout
+        main_widget = QWidget()
+        main_widget.setLayout(main_layout)
+
+        # --------- Subtle highlighting for input and notes fields (via stylesheet) ---------
+        highlight_qss = """
+        QFrame#InputFrame {
+            background: rgba(30, 120, 255, 0.04);
+            border-radius: 12px;
+            padding: 6px 4px;
+        }
+        QFrame#NotesFrame {
+            background: rgba(30, 120, 255, 0.06);
+            border-radius: 12px;
+            padding: 6px 4px;
+        }
+        QLineEdit#InputField, QTextEdit#NotesEdit {
+            background: rgba(200, 220, 255, 0.11);
+            border: none;
+            border-radius: 8px;
+            padding: 6px 8px;
+        }
+        QTextEdit#NotesEdit {
+            min-height: 80px;
+        }
+        """
+        main_widget.setStyleSheet(highlight_qss)
+        return main_widget
 
     def _update_input_form(self, idx):
         # Not used anymore; Eingabemaske is always visible now.
@@ -554,13 +604,14 @@ class MainWindow(QMainWindow):
     def apply_runtime_palettes(self, theme: str):
         # Update progress indicators
         pal = progress_palette(theme)
-        if hasattr(self, "progress1"):
-            self.progress1.set_palette(pal["color"], pal["track"], pal["text"])
-        if hasattr(self, "progress2"):
-            self.progress2.set_palette(pal["color"], pal["track"], pal["text"])
-        if hasattr(self, "progress3"):
-            self.progress3.set_palette(pal["color"], pal["track"], pal["text"])
-        self.case_view.set_theme(theme)
+        if hasattr(self, "kpi_throughput"):
+            self.kpi_throughput.set_palette(pal["color"], pal["track"], pal["text"])
+        if hasattr(self, "kpi_ratio"):
+            self.kpi_ratio.set_palette(pal["color"], pal["track"], pal["text"])
+        if hasattr(self, "kpi_utilization"):
+            self.kpi_utilization.set_palette(pal["color"], pal["track"], pal["text"])
+        if hasattr(self, "canvas"):
+            self.canvas.set_theme(theme)
 
     # Actions
     def action_new(self):
